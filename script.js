@@ -10,7 +10,8 @@ buyBtns.forEach(buyBtn => {
 });
 var cart = 0;
 
-function alertSeccess() {
+function alertSeccess(e) {
+    e.preventDefault();
     UserName = firstNameFeild.value
     if(UserName == ''){
         firstNameFeild.classList.add("border-danger")
